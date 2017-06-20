@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hide secret messages in plain sight">
+
+    <meta property="og:title" content="Steganography">
+    <meta property="og:site_name" content="shannonvturner.com">
+    <meta property="og:url" content="https://shannonvturner.com/stego">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Hide secret messages in plain sight">
+    <meta property="og:image" content="">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="https://shannonvturner.com/stego">
+    <meta name="twitter:creator" content="@svthmc">
+    <meta name="twitter:title" content="Steganography">
+    <meta name="twitter:description" content="Hide secret messages in plain sight">
+    <meta name="twitter:image:src" content="">
+
+    <title>Steganography</title>
+
+    <link rel="icon" href="">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/zw-stego.css">
+
+    <!-- This boilerplate is for compatibility with older browsers -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+  </head>
+
+<body>
+
+<a name="top"></a>
+
+<div class="container-fluid">
+
+  <div class="row">
+
+  <h2 class="text-center">Steganography</h2>
+  <h4 class="text-center">Hide a secret message in plain sight</h4>
+
+  </div>
+
+  <div class="row">
+    <div class="col-lg-3"> </div>
+    <div class="col-lg-9">
+      <button id="nav-hide-message" class="navigation-buttons btn btn-success">Hide a Message</button>
+      <button id="nav-reveal-message" class="navigation-buttons btn btn-info">Reveal a Hidden Message</button>
+    </div>
+  </div> <!-- /div.row -->
+
+  <div class="row when-hiding">
+    <div class="col-lg-3">
+      <h3>Secret message to hide</h3>
+    </div>
+    <div class="col-lg-9">
+      <textarea id="message-to-hide" class="when-hiding"></textarea>
+    </div>
+  </div> <!-- /div.row -->
+
+  <div class="row when-hiding">
+    <div class="col-lg-3">
+      <h3>Plain sight text that will contain your secret message</h3>
+    </div>
+    <div class="col-lg-9">
+      <textarea id="message-body" class="when-hiding"></textarea>
+    </div>
+  </div> <!-- /div.row -->
+
+  <div class="row when-hiding">
+    <div class="col-lg-3"> </div>
+    <div class="col-lg-9">
+      <button id="generate-plainsight-message" class="btn btn-success">Hide my secret message in the plain sight text</button>
+    </div>
+  </div>
+
+  <div class="row when-hiding result">
+    <hr>
+    <div class="col-lg-3">
+      <h3>You can't see it (of course) but your secret message is now hidden in your plain sight text:</h3>
+    </div>
+
+    <div class="col-lg-9">
+      <textarea id="message-with-secret"></textarea>
+      <button id="copy-to-clipboard" class="btn btn-success">Copy to clipboard</button>
+    </div>
+  </div> <!-- /div.row.when-hiding -->
+
+  <div class="row when-revealing">
+    <div class="col-lg-3">
+      <h3>Paste your plaintext message here</h3>
+    </div>
+
+    <div class="col-lg-9">
+      <textarea id="plainsight-message" class="when-revealing"></textarea>
+      <button id="reveal-hidden-message" class="btn btn-info">Reveal my message hidden in the plain sight text</button> 
+    </div>
+
+    <div class="row">
+      <h3 id="revealed-hidden-message-helper" class="text-center"></h3>
+      <h4 id="revealed-hidden-message" class="text-center"></h4>
+    </div>
+  </div> <!-- /div.row.when-revealing -->
+
+</div> <!-- /div.container-fluid -->
+
+  <script src="js/jquery-2.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/zw-stego.js"></script>
+
+  <!-- From https://github.com/lgarron/clipboard.js -->
+  <script src="js/clipboard.js"></script>
+
+  </body>
+</html>

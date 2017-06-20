@@ -1,0 +1,40 @@
+body {
+    font-family: Open Sans;
+}
+
+.navigation-buttons {
+    width: 40%;
+}
+
+textarea {
+    width: 80%;
+    margin: auto;
+    min-height: 125px;
+    font-size: 125%;
+}
+
+div.row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-left: 15px;
+}
+
+button {
+    width: 80%;
+}
+
+#copy-to-clipboard, #reveal-hidden-message {
+    transition: .5s;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.rainbow {
+    background: -webkit-linear-gradient(left, red, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+}
