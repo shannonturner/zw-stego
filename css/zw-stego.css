@@ -39,7 +39,7 @@ button {
     background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
 }
 
-#revealed-secret-message {
+#revealed-hidden-message {
     width: 80%;
     margin: auto;
 }
