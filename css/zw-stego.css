@@ -43,3 +43,15 @@ button {
     width: 80%;
     margin: auto;
 }
+
+@media (max-width: 768px) {
+    .navigation-buttons, textarea, button {
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    #generate-plainsight-message, #copy-to-clipboard {
+        min-height: 80px;
+        word-wrap: break-word;
+    }
+}
